@@ -1,7 +1,9 @@
 def count_positive_numbers(nums):
-    count = -1
+    #count should start at 0, not -1
+    count = 0
     for num in nums:
-        if num >= 0:
+        #remove the equal sign otherwise 0 counts as a positive number
+        if num > 0:
             count += 1
 
     return count
