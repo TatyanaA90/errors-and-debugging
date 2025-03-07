@@ -1,6 +1,6 @@
-from syntax import *
-from runtime import *
-from logical import *
+from syntax import syntax_errors
+from runtime import runtime_errors
+from logical import logical_errors
 
 def main():
     syntax_errors()
@@ -9,3 +9,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+#print(f"debug: {main()}")

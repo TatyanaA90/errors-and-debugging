@@ -1,11 +1,11 @@
 def map_character_frequency(words):
-    char_map = {]
-    for (word in words):
-        for character on word:
+    char_map = {}
+    for word in words:
+        for character in word:
             if character not in char_map:
-                char_map{character} = 1
-          else:
-                char_map(character) += 1
+                char_map[character] = 1
+            else:
+                char_map[character] += 1
     return char_map
 
 def test_map_character_frequency():
@@ -24,3 +24,9 @@ def test_map_character_frequency():
 
 def syntax_errors():
     test_map_character_frequency()
+
+#print(f"debug {map_character_frequency('apple')}")
+#syntax_errors
+
+
+# map_character_frequency -> test_map_character_frequency ->  syntax_errors
